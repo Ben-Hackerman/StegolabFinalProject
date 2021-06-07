@@ -1,3 +1,3 @@
 # StegolabFinalProject
 
-The Final portion begin on line 252 of PixelPlayground.java
+The Final portion begins on line 252 of PixelPlayground.java
