@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.Point;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class PixelPlayground
 {
@@ -291,7 +292,6 @@ public class PixelPlayground
         return sourcePic;
     }
 
-
     public static String revealPhrase(Picture source, Picture secret)
     {
         //create string to be appended
@@ -325,8 +325,13 @@ public class PixelPlayground
         Picture beachPicDup = new Picture("beach2.jpg");
         beachPic.explore();
 
-        //secret phrase
-        String secretPhrase = "Super secret phrase that I will hide in the image";
+        //create scanner
+        Scanner scan = new Scanner(System.in);
+
+        //get secret phrase
+        String secretPhrase = "";
+        System.out.println("Type secret phrase: ");
+        secretPhrase = scan.nextLine();
 
         //create beach pic with secret
         Picture beachPicSecret = hidePhrase(beachPicDup, secretPhrase);
